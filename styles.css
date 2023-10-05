@@ -2,13 +2,14 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background-color: #212121;
-  color: #fff;
+  /* background-color: #212121; */
+  /* color: #fff; */
 }
 
 
 
 .game {
+  margin: auto;
   position: absolute;
   inset: 25%;
   display: grid;
@@ -31,4 +32,41 @@ input {
 
 .menu {
   margin: auto;
+}
+
+.result{
+  /* display: none; */
+  margin: auto;
+  position: absolute;
+  inset: 25%;
+  width: 400px;
+  height: 300px;
+  background-color:#fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.421);
+  opacity: 0;
+  z-index: -999;
+}
+
+#cut{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #ff0000;
+  width: 10px;
+  height: 10px;
+}
+#result h1{
+  position: absolute;
+  inset: 25%;
+  margin: auto;
+}
+
+.show{
+  /* display: block; */
+  opacity: 1;
+  z-index: 999;
+}
+.hide{
+  /* display: none; */
+  opacity: 0;
 }
