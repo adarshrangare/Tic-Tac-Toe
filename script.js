@@ -40,7 +40,7 @@ const handleClick = (index) => {
     moves++;
     // check win or draw and change the player
       if (checkWin()) {
-        alert(Congratulations! ${currentPlayer} wins);
+        alert(`Congratulations! ${currentPlayer} wins`);
 
         disableGrids();
       } else if (checkDraw()) {
